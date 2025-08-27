@@ -20,8 +20,6 @@ load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -32,7 +30,7 @@ SECRET_KEY = 'django-insecure-y&y9n21s2lh_ud8l5_@q60g(i_uy+2%w=&2=zaz2x*w1m)6&56
 PRODUCTION = os.getenv('PRODUCTION', 'False').lower() == 'true'
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "farrell-bagoes-footballnews.pbp.cs.ui.ac.id"]
 
 
 # Application definition
